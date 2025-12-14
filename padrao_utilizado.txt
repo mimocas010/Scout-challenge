@@ -1,0 +1,7 @@
+No contexto do projeto Scouts Challenge, o Activity Provider necessita de disponibilizar diferentes tipos de métricas de analytics que avaliam o desempenho dos utilizadores nos desafios propostos, como a taxa de sucesso e o tempo médio de conclusão. Estas métricas podem variar consoante o tipo de pedido efetuado pela plataforma Inven!RA e poderão ser estendidas no futuro com novas formas de avaliação.
+
+Este cenário enquadra-se na utilização de um padrão de criação, uma vez que o sistema necessita de criar objetos de diferentes tipos que partilham uma interface comum, sem que o código cliente dependa diretamente das classes concretas. Para responder a esta necessidade, foi aplicado o padrão Factory Method.
+
+A utilização do Factory Method permite encapsular a lógica de criação dos diferentes tipos de analytics numa classe específica, delegando a responsabilidade de instanciar o objeto adequado com base no tipo solicitado. Desta forma, o Activity Provider torna-se mais flexível e extensível, permitindo a adição de novos tipos de métricas sem necessidade de alterar o código que as utiliza.
+
+O funcionamento deste padrão encontra-se documentado através de diagramas UML de componentes e de sequência, focados exclusivamente no processo de criação dos objetos de analytics, evidenciando a separação de responsabilidades e a redução do acoplamento entre componentes.
